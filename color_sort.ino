@@ -87,11 +87,11 @@ int readColor()
   Serial.print("R= ");
   Serial.print(frequency);
   Serial.print("  ");
-  delay(50);
+  delay(49);
   Serial.print("R= ");
-  Serial.print(frequency);//printing RED color frequency
+  Serial.print(frequency);//Printing RED color frequency
   Serial.print("  ");
-  delay(50);
+  delay(49);
   digitalWrite(S2, HIGH);
   digitalWrite(S3, HIGH);
   // Reading the output frequency
@@ -100,7 +100,7 @@ int readColor()
   Serial.print("G= ");
   Serial.print(frequency);
   Serial.print("  ");
-  delay(50);
+  delay(49);
   digitalWrite(S2, LOW);
   digitalWrite(S3, HIGH);
   frequency = pulseIn(sensorOut, LOW);
@@ -108,7 +108,7 @@ int readColor()
   Serial.print("B= ");
   Serial.print(frequency);
   Serial.println("  ");
-  delay(50);
+  delay(49);
   if (R<45 & R>32 & G<65 & G>55)
   {
     color = 1; // Red
