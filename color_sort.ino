@@ -58,6 +58,9 @@ void loop()
     case 6:
       bottomServo.write(175);
       break;
+    case 7:
+      bottomServo.write(185);
+      break;
 
     case 0:
       break;
@@ -80,6 +83,7 @@ void loop()
 
 int readColor()
 {
+  digitalWrite(S1, LOW);
   digitalWrite(S2, LOW);
   digitalWrite(S3, LOW);
   frequency = pulseIn(sensorOut, LOW);
